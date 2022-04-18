@@ -2,7 +2,6 @@ global function RconInit
 
 void function RconInit() {
 	AddClientCommandCallback("rcon", RconCommand);
-	AddClientCommandCallback("!rcon", RconCommand );
 }
 
 bool function RconCommand(entity player, array<string> args) {
