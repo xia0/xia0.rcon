@@ -1,0 +1,19 @@
+{
+	"Name" : "xia0.rcon",
+	"Description" : "",
+	"Version": "1.0",
+	"LoadPriority": 0,
+	"ConVars": [
+		{ "Name": "rcon_admin_uids",
+			"DefaultValue": "" }
+	],
+	"Scripts": [
+		{
+			"Path": "rcon.nut",
+			"RunOn": "SERVER && MP",
+			"ServerCallback": {
+				"After": "RconInit"
+			}
+		}
+	]
+}
